@@ -26,6 +26,7 @@ public class AskCardActivity extends Activity
     @InjectView(R.id.tv_title_menu_right)
     TextView tvTitleMenuRight;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

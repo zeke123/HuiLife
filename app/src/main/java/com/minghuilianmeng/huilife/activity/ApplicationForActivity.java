@@ -36,6 +36,7 @@ public class ApplicationForActivity extends Activity
         initTitle();
     }
 
+
     private void initTitle()
     {
         tvTitleName.setText("合作申请");

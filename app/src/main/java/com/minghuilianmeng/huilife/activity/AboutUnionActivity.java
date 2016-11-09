@@ -11,7 +11,6 @@ import com.minghuilianmeng.huilife.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-
 /**
  * 关于明慧联盟的界面
  * Created by zhoujian on 16/8/30.
