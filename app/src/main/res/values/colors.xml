@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="red">#E51C23</color>
+    <color name="gray">#444444</color>
+    <color name="white">#ffffff</color>
+    <color name="comment_line">#ffe7e7e7</color>
+    <color name="comment_three_color">#333333</color>
+    <color name="comment_six_color">#666666</color>
+    <color name="comment_bg">#F0F0F2</color>
+
+
+</resources>

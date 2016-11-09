@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/red"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.minghuilianmeng.huilife.view.CircleImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/post_detail_bg"
+                    app:border_color="@color/red"
+                    app:border_width="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head_img"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="周建"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/comment_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mime_card"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mime_card"
+                android:textColor="@color/comment_six_color" />
+
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/whether_binding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow"
+                android:layout_toStartOf="@id/arrow"
+                android:text="已绑定"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_records_of_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:text="@string/records_of_consumption"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_one"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/save_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_one"
+                android:layout_toStartOf="@id/arrow_one"
+                android:text="累计省钱200元"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_care_plan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/care_plan"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_two"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_two"
+                android:layout_toStartOf="@id/arrow_two"
+                android:text="已激活"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_car_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_car_insurance"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_three"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/car_insurance_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_three"
+                android:layout_toStartOf="@id/arrow_three"
+                android:text="2份"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_points"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mine_points"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_four"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/points_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_four"
+                android:layout_toStartOf="@id/arrow_four"
+                android:text="258分"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_integral_mall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/editor"
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/integral_mall"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_five"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_integral_mall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_five"
+                android:layout_toStartOf="@id/arrow_five"
+                android:text="0元换购好礼"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mall_orders"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mall_orders"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_six"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/mall_orders_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_six"
+                android:layout_toStartOf="@id/arrow_six"
+                android:text="3笔待收"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/shipping_address"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_seven"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/shipping_address_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_seven"
+                android:layout_toStartOf="@id/arrow_seven"
+                android:text="2条"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/comment_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/comment_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_collection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mine_collection"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_eight"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/mine_collection_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_eight"
+                android:layout_toStartOf="@id/arrow_eight"
+                android:text="12个"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_comment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/editor"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:text="@string/mine_comment"
+                android:textColor="@color/comment_six_color" />
+
+            <ImageView
+                android:id="@+id/arrow_nine"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/mine_comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/arrow_nine"
+                android:layout_toStartOf="@id/arrow_nine"
+                android:text="156条"
+                android:textColor="@color/comment_six_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/comment_line" />
+    </LinearLayout>
+</ScrollView>

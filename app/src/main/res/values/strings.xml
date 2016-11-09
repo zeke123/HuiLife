@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">惠生活</string>
+    <string name="version">V 1.0.0</string>
+    <string name="more">更多</string>
+    <string name="null_value">TODO</string>
+    <string name="ask_for_card">索取民慧联盟卡</string>
+    <string name="ask_card_for_friend">邀请好友索取民慧联盟卡</string>
+    <string name="provincial_traffic_patterns">省流量模式</string>
+    <string name="message_to_remind">消息提醒</string>
+    <string name="clear_the_cache">清空缓存</string>
+    <string name="feedback">意见反馈</string>
+    <string name="the_questionnaire_survey">问卷调查</string>
+    <string name="application_for">合作申请</string>
+    <string name="card_guide">用卡指南</string>
+    <string name="super_optional_activity">超级选拔活动</string>
+    <string name="about_union">关于民慧联盟</string>
+    <string name="about_hui_life">关于慧生活</string>
+
+
+    <string name="mime_card">我的民慧联盟卡</string>
+    <string name="records_of_consumption">消费记录</string>
+    <string name="care_plan">关爱计划</string>
+    <string name="my_car_insurance">我的车险</string>
+    <string name="mine_points">我的积分</string>
+    <string name="integral_mall">积分商城</string>
+    <string name="mall_orders">商城订单</string>
+    <string name="shipping_address">收货地址</string>
+    <string name="mine_collection">我的收藏</string>
+    <string name="mine_comment">我的评论</string>
+
+
+
+
+
+
+</resources>
